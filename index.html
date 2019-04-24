@@ -4,8 +4,8 @@
                 SPA-PAGE
         </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <script></script>
-    <script type="text/javascript" src='./Route.js'></script>
+    <script type='module' src='./Egg/Egg.js'></script>
+    <script type="module" src='./index.js'></script>
 </head>
     <body>
             <a href="#/">首页</a>
@@ -13,24 +13,6 @@
             <a href="#/page2">page2</a>
             <a href="#/page3">page3</a>
             <a href="#/page4">page4</a>
+            <div id='app'></div>
     </body>
-    <script>
-    Route.registeRoute([{
-        routeName:'page1',
-        component:'./routes/page1.js'
-    },
-    {
-        routeName:'page2',
-        component:'./routes/page2.js'
-    },
-    {
-        routeName:'page3',
-        component:'./routes/page3.js'
-    },
-    {
-        routeName:'page4',
-        component:'./routes/page4.js'
-    }])
-   Route.init();
-    </script>
 </html>
